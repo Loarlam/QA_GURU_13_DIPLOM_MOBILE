@@ -13,3 +13,5 @@ gradlew.bat
 .allure/
 allure-results/
 logs/
+/notifications/*.txt
+/notifications/*.json
