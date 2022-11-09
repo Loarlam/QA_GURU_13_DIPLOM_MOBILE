@@ -17,7 +17,7 @@ import static io.qameta.allure.Allure.step;
 import static org.wkipedia.en.helpers.Attach.sessionId;
 
 public class TestBase {
-    public static String device = System.getProperty("deviceHost");
+    public static String device = System.getProperty("host");
 
     @BeforeAll
     public static void setup() {
@@ -50,7 +50,7 @@ public class TestBase {
         String sessionId = sessionId();
         Attach.screenshotAs("Last screenshot");
         Attach.pageSource();
-        
+
         step("Close driver", Selenide::closeWebDriver);
 
         if (device.equals("browserstackDevice"))
