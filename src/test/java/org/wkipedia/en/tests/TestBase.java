@@ -31,6 +31,8 @@ public class TestBase {
             case ("virtualDevice"):
                 Configuration.browser = VirtualMobileDriver.class.getName();
                 break;
+            default:
+                throw new RuntimeException("Host is not found!");
         }
 
         Configuration.browserSize = null;
@@ -48,7 +50,9 @@ public class TestBase {
         String sessionId = sessionId();
         Attach.screenshotAs("Last screenshot");
         Attach.pageSource();
+        
         step("Close driver", Selenide::closeWebDriver);
+
         if (device.equals("browserstackDevice"))
             Attach.video(sessionId);
     }
