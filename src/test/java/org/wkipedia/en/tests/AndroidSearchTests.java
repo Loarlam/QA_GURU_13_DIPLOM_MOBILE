@@ -20,7 +20,6 @@ public class AndroidSearchTests extends TestBase {
     @Severity(SeverityLevel.NORMAL)
     @DisplayName("Checking \"saved\" button in mobile app Wikipedia")
     void savedButtonTest() {
-//        switchTo().alert().accept(); - раскомментить при тестировании на живом девайсе локально
         back();
 
         step("Pressing \"saved\" button", () ->
@@ -34,7 +33,6 @@ public class AndroidSearchTests extends TestBase {
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Checking \"search\" button in mobile app Wikipedia")
     void searchButtonTest() {
-//        switchTo().alert().accept(); - раскомментить при тестировании на живом девайсе локально
         back();
 
         step("Pressing \"search\" button", () ->
@@ -52,7 +50,6 @@ public class AndroidSearchTests extends TestBase {
     @Severity(SeverityLevel.NORMAL)
     @DisplayName("Pressing \"edits\" button")
     void editsButtonTest() {
-//        switchTo().alert().accept(); - раскомментить при тестировании на живом девайсе локально
         back();
 
         step("Checking \"edits\" button in mobile app Wikipedia", () ->
@@ -67,7 +64,6 @@ public class AndroidSearchTests extends TestBase {
     @DisplayName("Clicking in the \"search wikipedia\" field and search \"dyskinesia\"")
     void searchTextWikiInSearchSrc() {
         back();
-//        switchTo().alert().accept(); - раскомментить при тестировании на живом девайсе локально
         step("Clicking in the \"search wikipedia\" field", () ->
                 $(AppiumBy.accessibilityId("Search Wikipedia")).click());
         step("Entering a value \"dyskinesia\" in the search wikipedia field", () ->
@@ -84,7 +80,6 @@ public class AndroidSearchTests extends TestBase {
     @DisplayName("Clicking in the \"search wikipedia\" field and search \"aplasia\"")
     void searchTextWikiInSearchContatiner() {
         back();
-//        switchTo().alert().accept(); - раскомментить при тестировании на живом девайсе локально
         step("Clicking in the \"search wikipedia\" field", () ->
                 $(AppiumBy.id("org.wikipedia.alpha:id/search_container")).click());
         step("Entering a value \"aplasia\" in the search wikipedia field", () ->
