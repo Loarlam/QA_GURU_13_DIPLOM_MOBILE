@@ -1,6 +1,9 @@
 # Автоматизация тестирования мобильного приложения Wikipedia
 
-<kbd>[![](images/screenshots/Wiki.jpg)](https://github.com/wikimedia/apps-android-wikipedia/releases/)</kbd>
+<kbd>
+<p align="center">
+<a href="https://github.com/wikimedia/apps-android-wikipedia/releases"><img src="images/screenshots/Wiki.jpg" width="50%" alt="Wiki"/></a>
+</p></kbd>
 
 ## Содержание:
 + [Стек технологий](#computer-Стек-технологий)
