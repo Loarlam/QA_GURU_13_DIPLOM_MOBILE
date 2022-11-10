@@ -42,31 +42,24 @@
 <kbd>[![](images/screenshots/JenkinsResult.jpg)](https://jenkins.autotests.cloud/job/Loarlam-QA_GURU_13_DIPLOM_MOBILE/)</kbd>
 
 #### Параметры сборки:
-| Параметры          | Значение                            |
-|:-------------------|:------------------------------------|
-| REMOTE_LINK        | Удаленный сервер для запуска тестов |
-| BROWSER            | Браузер для запуска тестов          |
-| BROWSER_VERSION    | Версия браузера                     |
-| BROWSER_RESOLUTION | Размер окна браузера                |
+| Параметры          | Значение                             |
+|:-------------------|:-------------------------------------|
+| DEVICE             | Способы запуска мобильных автотестов |
 
 <kbd>[![](images/screenshots/JenkinsStart.jpg)](https://jenkins.autotests.cloud/job/Loarlam-QA_GURU_13_DIPLOM_MOBILE/build)</kbd>
 
 ## :desktop_computer: Команды запуска тестов в терминале
 #### Команды для локального запуска:
 ```bash
-./gradlew clean taskWithTagVacancy -Dhost=localLaunch
+./gradlew clean taskWithTagWiki -Dhost=${DEVICE}
 ```
+>${DEVICE} заменяем на одно из: browserstackDevice, personalDevice, virtualDevice
 
 #### Команды для удаленного запуска:
 ```bash
-clean
-taskWithTagVacancy
--DremoteLink=${REMOTE_LINK}
--Dbrowser=${BROWSER}
--Dversion=${BROWSER_VERSION}
--Dresolution=${BROWSER_RESOLUTION}
--Dhost=remoteLaunch
+clean taskWithTagWiki -Dhost=${DEVICE}
 ```
+>${DEVICE} заменяем на одно из: browserstackDevice, personalDevice, virtualDevice
 
 ## <img width="5%" title="Allure" src="images/logo/allureReport.svg"> Интеграция с Allure report
 #### Диаграммы прохождения тестов:
