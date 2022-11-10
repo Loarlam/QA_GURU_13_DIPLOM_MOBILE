@@ -36,7 +36,7 @@
 + :white_check_mark: Проверка работы кнопки "Saved"
 + :white_check_mark: Проверка работы кнопки "Edits"
 + :white_check_mark: Проверка перехода из поиска в найденную статью
-+ :white_check_mark: Проверка выдачи поиска
++ :white_check_mark: Проверка вхождения в выдачу поиска искомого значения
 
 ## <img width="5%" src="images/logo/jenkins.svg"> Сборка в Jenkins
 <kbd>[![](images/screenshots/JenkinsResult.jpg)](https://jenkins.autotests.cloud/job/Loarlam-QA_GURU_13_DIPLOM_MOBILE/)</kbd>
@@ -115,7 +115,7 @@ clean taskWithTagWiki -Dhost=${DEVICE}
   <img src="images/gif/VideoResult4.gif">
 </p>
 
-#### :white_check_mark: Проверка выдачи поиска:
+#### :white_check_mark: Проверка вхождения в выдачу поиска искомого значения:
 <p align="center">
   <img src="images/gif/VideoResult5.gif">
 </p>
