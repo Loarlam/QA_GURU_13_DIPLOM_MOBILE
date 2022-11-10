@@ -17,6 +17,7 @@ import static io.qameta.allure.Allure.step;
 import static org.wkipedia.en.helpers.Attach.sessionId;
 
 public class TestBase {
+    static DataForTheTest dataForTheTest = new DataForTheTest();
     public static String device = System.getProperty("host");
 
     @BeforeAll

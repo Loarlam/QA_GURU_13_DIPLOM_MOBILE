@@ -25,7 +25,7 @@ public class AndroidSearchTests extends TestBase {
         step("Pressing \"saved\" button", () ->
                 $(AppiumBy.id("org.wikipedia.alpha:id/nav_tab_reading_lists")).click());
         step("Checking if the correct page is open", () ->
-                $(AppiumBy.id("org.wikipedia.alpha:id/messageTitleView")).shouldHave(text("Sync reading lists")));
+                $(AppiumBy.id("org.wikipedia.alpha:id/messageTitleView")).shouldHave(text(dataForTheTest.savedSearchText)));
     }
 
     @Test
@@ -39,9 +39,9 @@ public class AndroidSearchTests extends TestBase {
                 $(AppiumBy.id("org.wikipedia.alpha:id/nav_tab_search")).click());
         step("Checking if the correct page is open", () ->
         {
-            $(AppiumBy.id("org.wikipedia.alpha:id/history_title")).shouldHave(text("History"));
-            $(AppiumBy.id("org.wikipedia.alpha:id/history_empty_title")).shouldHave(text("No recently viewed articles"));
-            $(AppiumBy.id("org.wikipedia.alpha:id/history_empty_message")).shouldHave(text("Track what you've been reading here."));
+            $(AppiumBy.id("org.wikipedia.alpha:id/history_title")).shouldHave(text(dataForTheTest.searchHistoryTitle));
+            $(AppiumBy.id("org.wikipedia.alpha:id/history_empty_title")).shouldHave(text(dataForTheTest.searchHistoryEmptyTitle));
+            $(AppiumBy.id("org.wikipedia.alpha:id/history_empty_message")).shouldHave(text(dataForTheTest.searchHistoryEmptyMessage));
         });
     }
 
@@ -55,7 +55,7 @@ public class AndroidSearchTests extends TestBase {
         step("Checking \"edits\" button in mobile app Wikipedia", () ->
                 $(AppiumBy.id("org.wikipedia.alpha:id/nav_tab_edits")).click());
         step("Checking if the correct page is open", () ->
-                $(AppiumBy.id("org.wikipedia.alpha:id/messageTitleView")).shouldHave(text("Did you know that everyone can edit Wikipedia?")));
+                $(AppiumBy.id("org.wikipedia.alpha:id/messageTitleView")).shouldHave(text(dataForTheTest.editsSearchText)));
     }
 
     @Test
@@ -67,7 +67,7 @@ public class AndroidSearchTests extends TestBase {
         step("Clicking in the \"search wikipedia\" field", () ->
                 $(AppiumBy.accessibilityId("Search Wikipedia")).click());
         step("Entering a value \"dyskinesia\" in the search wikipedia field", () ->
-                $(AppiumBy.id("org.wikipedia.alpha:id/search_src_text"))).sendKeys("Dyskinesia");
+                $(AppiumBy.id("org.wikipedia.alpha:id/search_src_text"))).sendKeys(dataForTheTest.searchLineFirstRequest);
         step("Checking found content for \"dyskinesia\"", () ->
                 $$(AppiumBy.id("org.wikipedia.alpha:id/page_list_item_title"))
                         .shouldHave(sizeGreaterThan(0)));
@@ -83,7 +83,7 @@ public class AndroidSearchTests extends TestBase {
         step("Clicking in the \"search wikipedia\" field", () ->
                 $(AppiumBy.id("org.wikipedia.alpha:id/search_container")).click());
         step("Entering a value \"aplasia\" in the search wikipedia field", () ->
-                $(AppiumBy.id("org.wikipedia.alpha:id/search_src_text"))).sendKeys("Aplasia");
+                $(AppiumBy.id("org.wikipedia.alpha:id/search_src_text"))).sendKeys(dataForTheTest.searchLineSecondRquest);
         step("Checking found content for \"aplasia\"", () ->
                 $$(AppiumBy.id("org.wikipedia.alpha:id/search_results_list"))
                         .shouldHave(CollectionCondition.sizeGreaterThan(0)));
