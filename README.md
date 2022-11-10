@@ -13,6 +13,7 @@
 + [Интеграция с Allure TestOps](#-Интеграция-с-Allure-testOps)
 + [Интеграция с Jira](#-Интеграция-с-Jira)
 + [Видео прохождения тестов](#cinema-Видео-прохождения-Тестов)
++ [Интеграция с Appium](#-Интеграция-с-Appium)
 + [Интеграция с Browserstack](#-Интеграция-с-Browserstack)
 + [Информирование в Telegram](#-Информирование-в-Telegram)
 
@@ -122,6 +123,10 @@ clean taskWithTagWiki -Dhost=${DEVICE}
 <p align="center">
   <img src="images/gif/VideoResult5.gif">
 </p>
+
+## <img width="5%" title="Appium" src="images/logo/appium.svg"> Интеграция с Appium
+#### Запуск автотестов на личном смартфоне при помощи Appium Server GUI:
+<kbd>![](images/screenshots/AppiumVirtualDevice.jpg)</kbd>
 
 ## <img width="5%" title="Browserstack" src="images/logo/browserstack.svg"> Интеграция с Browserstack
 #### Детальная инфографика процесса:
