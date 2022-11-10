@@ -11,8 +11,9 @@
 + [Команды запуска тестов в терминале](#desktop_computer-Команды-запуска-тестов-в-терминале)
 + [Интеграция с Allure report](#-Интеграция-с-Allure-report)
 + [Интеграция с Allure TestOps](#-Интеграция-с-Allure-testOps)
-+ [Видео прохождения тестов](#cinema-Видео-прохождения-Тестов)
 + [Интеграция с Jira](#-Интеграция-с-Jira)
++ [Видео прохождения тестов](#cinema-Видео-прохождения-Тестов)
++ [Интеграция с Browserstack](#-Интеграция-с-Browserstack)
 + [Информирование в Telegram](#-Информирование-в-Telegram)
 
 ## :computer: Стек технологий
@@ -121,6 +122,10 @@ clean taskWithTagWiki -Dhost=${DEVICE}
 <p align="center">
   <img src="images/gif/VideoResult5.gif">
 </p>
+
+## <img width="5%" title="Browserstack" src="images/logo/browserstack.svg"> Интеграция с Browserstack
+#### Детальная инфографика процесса:
+<kbd>![](images/screenshots/Browserstack.jpg)</kbd>
 
 ## <img width="5%" title="Telegram" src="images/logo/telegram.svg"> Информирование в Telegram
 #### Оповещение ведется при помощи Telegram bot API:
