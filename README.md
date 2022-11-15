@@ -128,6 +128,9 @@ clean taskWithTagWiki -Dhost=${DEVICE}
 #### Запуск автотестов на личном смартфоне при помощи Appium Server GUI:
 <kbd>![](images/screenshots/AppiumVirtualDevice.jpg)</kbd>
 
+#### Запуск автотестов на виртуальном смартфоне при помощи Appium Inspector и Android Studio:
+<kbd>![](images/screenshots/AppiumInspector.jpg)</kbd>
+
 ## <img width="5%" title="Browserstack" src="images/logo/browserstack.svg"> Интеграция с Browserstack
 #### Детальная инфографика процесса:
 <kbd>![](images/screenshots/Browserstack.jpg)</kbd>
